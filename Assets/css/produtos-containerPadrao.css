@@ -105,6 +105,10 @@
         font-size: 2rem;
     }
 
+    .produtos__container{
+        overflow: auto;
+
+    }
     
     
 }
