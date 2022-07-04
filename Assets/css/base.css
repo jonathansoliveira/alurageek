@@ -1,0 +1,44 @@
+:root {
+    --cor-fundo-padrao: #ffffff;
+    --cor-fundo-2: #EAF2FD;
+    --cor-fundo-3: #f5f5f5;
+    --cor-fonte2: #2A7AE4;
+    --fonte1: 'Roboto Mono', monospace;
+    --fonte2: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+
+body{
+    font-size: .875rem;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-style: none;
+}
+
+
+@media screen and (min-width: 768px){
+    .container {
+        padding: 0 2rem;
+    }
+    *{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        padding: 0 8rem;        
+    }
+}

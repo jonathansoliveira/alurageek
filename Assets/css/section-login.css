@@ -1,0 +1,86 @@
+.section-login{
+    background-color: var(--cor-fundo-3);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formlogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 189px;
+
+}
+
+.formusuario{
+    border: none;
+    height: 41px;
+    outline: none;
+    width: 275px;
+    padding: 1rem; 
+}
+
+.formsenha {
+    border: none;
+    height: 41px;
+    outline: none;
+    width: 275px;
+    padding:1rem;
+}
+
+.btn-fazerlogin{
+    background-color: var(--cor-fonte2);
+    border:none;
+    color: white;
+    font-size: .875rem;
+    font-weight: 400;
+    height: 40px;
+    padding: .75rem 1rem;
+    text-align: center;
+    width: 109px;
+    cursor: pointer;
+}
+
+.formlogin__titulo{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px){
+   
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .formlogin__titulo{
+        font-size: 1.125rem;
+    }
+
+    .formusuario{
+        height: 56px;
+        width: 423px;
+    }
+    
+    .formsenha {
+        height: 56px;
+        width: 423px;
+    }
+
+    .btn-fazerlogin{
+        height: 51px;
+        width: 423px;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .formlogin{
+        height: 291px;
+        width: 423px;
+    }
+
+    
+}

@@ -1,0 +1,10 @@
+.rodape{
+    width: 100%;
+    padding: 2rem;
+}
+
+.rodape__desenvolvedor{
+    text-align: center;
+    margin: auto;
+    background-color: white;
+}

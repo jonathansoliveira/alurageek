@@ -1,0 +1,99 @@
+.section-addProduto{
+    background-color: var(--cor-fundo-3);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.button-administrador{
+    width: 182px;
+    height: 51px;
+    padding: 1rem 0;
+    border: 1px solid var(--cor-fonte2);
+    background-color: var(--cor-fundo-padrao);
+    color: var(--cor-fonte2);
+    text-align: center;
+}
+
+.formaddproduto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 704px;
+    gap: 1rem;
+}
+
+.formaddproduto__titulo{
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.form-url{
+    border: none;
+    height: 56px;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-categoria{
+    border: none;
+    height: 56px;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-produto{
+    border: none;
+    height: 56px;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-preco{
+    border: none;
+    height: 56px;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-descricao{
+    border: none;
+    height: 56px;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn-addproduto{
+    background-color: var(--cor-fonte2);
+    border:none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 51px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+   
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .formaddproduto__titulo{
+        font-size: 2rem;
+    }
+    
+}
