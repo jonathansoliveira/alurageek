@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="Assets/css/produtos-containerPadrao.css">
     <link rel="stylesheet" href="Assets/css/section-consoles.css">
     <link rel="stylesheet" href="Assets/css/section-diversos.css">
+    <link rel="stylesheet" href="Assets/css/formulariosValidacao.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
     <header>
         <section class="cabecalho container">
             <div class="cabecalho__principal">
-                <img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek">
+                <a href="index.html"><img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek"></a>
                 <div class="cabecalho__pesquisa">
                     <input type="text" class="input__pesquisa" placeholder="O que deseja encontrar?">
                     <input type="submit" class="btn-pesquisar" value="">
@@ -38,7 +39,7 @@
         <section class="banner container">
             <h1 class="banner__titulo">Julho Promocional</h1>
             <h2 class="banner__subtitulo">Produtos selecionados com 33% de desconto</h2>
-            <a href="#" class="button-consoles">Ver Consoles</a>
+            <a href="#consoles" class="button-consoles">Ver Consoles</a>
         </section> 
     </header>
     <main>
@@ -48,87 +49,17 @@
                     <h2 class="produtos__titulo">Star Wars</h2>
                     <span class="btn-verprodutos"><a href="todos-produtos.html" class="produtos__link">Ver tudo</a><img src="Assets/imagens/icone-seta.png" alt="icone-seta-direita"></span>
                 </div>
-                <div class="produtos__container">
-                    <div class="caixa">
-                        <img src="Assets/imagens/Skill1.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill2.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/Skill3.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill4.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/Skill5.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill6.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
+                <div class="produtos__container" data-starwars>
+                    
                 </div>
             </section>
-            <section class="consoles container">
+            <section class="consoles container" id="consoles">
                 <div class="produtos__containerTitulo">
                     <h2 class="produtos__titulo">Consoles</h2>
                     <span class="btn-verprodutos"><a href="todos-produtos.html" class="produtos__link">Ver tudo</a><img src="Assets/imagens/icone-seta.png" alt="icone-seta-direita"></span>
                 </div>
-                <div class="produtos__container aside">
-                    <div class="caixa">
-                        <img src="Assets/imagens/Skill7.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill8.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill9.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill10.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill11.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill12.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
+                <div class="produtos__container aside" data-consoles>
+                    
                 </div>
             </section>
             <section class="diversos container">
@@ -136,43 +67,8 @@
                     <h2 class="produtos__titulo">Diversos</h2>
                     <span class="btn-verprodutos"><a href="todos-produtos.html" class="produtos__link">Ver tudo</a><img src="Assets/imagens/icone-seta.png" alt="icone-seta-direita"></span>
                 </div>
-                <div class="produtos__container">
-                    <div class="caixa">
-                        <img src="Assets/imagens/Skill13.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill14.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill15.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill16.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill17.jpg" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
-                    <div class="caixa">
-                        <img src="Assets/imagens/skill18.png" alt="produto starwars" class="img-produto">
-                        <p class="caixa__descricao">Produto XYZ</p>
-                        <h3 class="caixa__preco">R$ 60,00</h3>
-                        <a href="#" class="caixa__ver-produto">Ver produto</a>
-                    </div>
+                <div class="produtos__container" data-diversos>
+                    
                 </div>
             </section>
         </section>
@@ -195,8 +91,14 @@
             <div class="formcontato__formulario">
                 <h3 class="formulario__titulo">Fale conosco</h3>
                 <form class="form">
-                    <input type="text" name="name" class="form__nome" placeholder="Nome">
-                    <textarea name="mensagem" class="form__mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                    <div class="input-container">
+                        <input type="text" id="nome" name="name" class="form__nome" data-tipo="nome" placeholder="Nome" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="mensagem" id="mensagem" class="form__mensagem" id="mensagem" data-tipo="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
                     <input type="submit" class="button__enviarMsg">
                 </form>                
             </div>
@@ -208,5 +110,7 @@
             <p>2022</p>
         </div>
     </footer>    
+    <script src="Assets/script/validaFormularios.js"></script>
+    <script src="Assets/script/app-index.js" type="module"></script>
 </body>
 </html>

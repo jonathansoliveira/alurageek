@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Assets/css/rodape.css">
     <link rel="stylesheet" href="Assets/css/formcontato.css">
     <link rel="stylesheet" href="Assets/css/section-login.css">
+    <link rel="stylesheet" href="Assets/css/formulariosValidacao.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
     <header>
         <section class="cabecalho container">
             <div class="cabecalho__principal">
-                <img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek">
+                <a href="index.html"><img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek"></a>
                 <div class="cabecalho__pesquisa">
                     <input type="text" class="input__pesquisa" placeholder="O que deseja encontrar?">
                     <input type="submit" class="btn-pesquisar" value="">
@@ -35,8 +36,14 @@
         <section class="section-login container">
             <form class="formlogin"> 
                 <h2 class="formlogin__titulo">Iniciar seção</h2>
-                <input class="formusuario" type="email" placeholder="Escreva seu e-mail">
-                <input class="formsenha" type="password" placeholder="Escreva sua senha">
+                <div class="input-container">
+                    <input class="formusuario" type="email" placeholder="Escreva seu e-mail" data-tipo="email" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="formsenha" type="password" placeholder="Escreva sua senha" data-tipo="senha" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
                 <input type="submit" class="btn-fazerlogin" value="Entrar">
             </form>
          </section>                    
@@ -59,8 +66,14 @@
             <div class="formcontato__formulario">
                 <h3 class="formulario__titulo">Fale conosco</h3>
                 <form class="form">
-                    <input type="text" name="name" class="form__nome" placeholder="Nome">
-                    <textarea name="mensagem" class="form__mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                    <div class="input-container">
+                        <input type="text" id="nome" name="name" class="form__nome" data-tipo="nome" placeholder="Nome" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="mensagem" id="mensagem" class="form__mensagem" id="mensagem" data-tipo="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
                     <input type="submit" class="button__enviarMsg">
                 </form>                
             </div>
@@ -72,5 +85,6 @@
             <p>2022</p>
         </div>
     </footer>    
+    <script src="Assets/script/validaFormularios.js"></script>
 </body>
 </html>

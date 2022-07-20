@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Assets/css/rodape.css">
     <link rel="stylesheet" href="Assets/css/formcontato.css">
     <link rel="stylesheet" href="Assets/css/form-addproduto.css">
+    <link rel="stylesheet" href="Assets/css/formulariosValidacao.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,7 @@
     <header>
         <section class="cabecalho container">
             <div class="cabecalho__principal">
-                <img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek">
+                <a href="index.html"><img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek"></a>
                 <div class="cabecalho__pesquisa">
                     <input type="text" class="input__pesquisa" placeholder="O que deseja encontrar?">
                     <input type="submit" class="btn-pesquisar" value="">
@@ -37,12 +38,27 @@
         <section class="section-addProduto container">
             <form class="formaddproduto">
                 <h2 class="formaddproduto__titulo">Adicionar novo produto</h2>
-                <input class="form-url" type="email" placeholder="URL da imagem">
-                <input class="form-categoria" type="password" placeholder="Categoria">
-                <input class="form-produto" type="email" placeholder="Nome do produto">
-                <input class="form-preco" type="password" placeholder="Preço do produto">
-                <input class="form-descricao" type="password" placeholder="Descrição do produto">
-                <input type="submit" class="btn-addproduto" value="Adicionar produto">
+                <div class="input-container">
+                    <input class="form-url" type="text" data-tipo="url" placeholder="URL da imagem" data-url required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-categoria" type="text" data-tipo="categoria" data-categoria placeholder="Digite uma categoria: Star Wars, Consoles ou Diversos" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-produto" type="text" data-tipo="nomeDoProduto" data-nomeProduto placeholder="Nome do produto" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-preco" type="text" data-tipo="preco" placeholder="Preço do produto" data-preco required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-descricao" type="text" data-tipo="descricao" placeholder="Descrição do produto" data-descricao required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <input type="submit" class="btn-addproduto" value="Adicionar produto" data-btnNovoProduto>
             </form>
          </section>                    
          <section class="formcontato container">
@@ -64,9 +80,15 @@
             <div class="formcontato__formulario">
                 <h3 class="formulario__titulo">Fale conosco</h3>
                 <form class="form">
-                    <input type="text" name="name" class="form__nome" placeholder="Nome">
-                    <textarea name="mensagem" class="form__mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
-                    <input type="submit" class="button__enviarMsg">
+                    <div class="input-container">
+                        <input type="text" id="nome" name="name" class="form__nome" data-tipo="nome" placeholder="Nome" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="mensagem" id="mensagem" class="form__mensagem" id="mensagem" data-tipo="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <input type="submit" class="button__enviarMsg" >
                 </form>                
             </div>
         </section>
@@ -76,6 +98,9 @@
             <p>Desenvolvido por Jonathan Oliveira</p>
             <p>2022</p>
         </div>
-    </footer>    
+    </footer>   
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    <script src="Assets/script/validaFormularios.js"></script> 
+    <script src="Assets/script/adicionaNovoProduto.js" type="module"></script>
 </body>
 </html>
