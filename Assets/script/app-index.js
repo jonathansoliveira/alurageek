@@ -1,4 +1,4 @@
-import { criaProduto } from "./CriaProduto.js";
+import { criaProdutoNosConsoles } from "./CriaProduto.js";
 
 const produtosAtualizados = JSON.parse(localStorage.getItem('Produtos'));
 
@@ -6,14 +6,14 @@ const produtosAtualizados = JSON.parse(localStorage.getItem('Produtos'));
 produtosAtualizados.forEach((produto)=>{
     if(produto.categoria=="consoles"){
         const consoles = document.querySelector('[data-consoles]')
-        consoles.appendChild(criaProduto(produto))
+        consoles.appendChild(criaProdutoNosConsoles(produto))
     }
     if(produto.categoria=="starwars"){
         const starwars = document.querySelector('[data-starwars]')
-        starwars.appendChild(criaProduto(produto))
+        starwars.appendChild(criaProdutoNosConsoles(produto))
     }
     if(produto.categoria=="diversos"){
         const diversos = document.querySelector('[data-diversos]')
-        diversos.appendChild(criaProduto(produto))
+        diversos.appendChild(criaProdutoNosConsoles(produto))
     }
 })

@@ -131,3 +131,15 @@ export function criaProduto(produto){
     Produto.innerHTML=conteudo
     return Produto;
 }
+
+
+export function criaProdutoNosConsoles(produto){
+    const conteudo = `<img src="${produto.url}" alt="produto starwars" class="img-produto">
+    <p class="caixa__descricao">${produto.nome}</p>
+    <h3 class="caixa__preco">${produto.preco}</h3>
+    <a href="#" class="caixa__ver-produto">Ver produto</a>`
+    const Produto = document.createElement('div');
+    Produto.classList.add('caixa');
+    Produto.innerHTML=conteudo
+    return Produto;
+}
