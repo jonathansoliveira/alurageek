@@ -114,14 +114,9 @@ if(produtosAtualizados==null){
     localStorage.setItem('Produtos', JSON.stringify(produtos))
 }
 
-
-
-
-
-
 export function criaProduto(produto){
     const conteudo = `<img src="${produto.url}" alt="produto starwars" class="img-produto">
-    <a href="" class="caixa__editar"><img src="Assets/imagens/editar.png" alt="Editar produto"></a>
+    <a href="editar-produto.html" class="caixa__editar"><img src="Assets/imagens/editar.png" alt="Editar produto"></a>
     <a href="" class="caixa__excluir"><img src="Assets/imagens/excluir.png" alt="Editar produto"></a>
     <p class="caixa__descricao">${produto.nome}</p>
     <h3 class="caixa__preco">${produto.preco}</h3>

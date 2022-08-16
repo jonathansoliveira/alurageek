@@ -19,8 +19,8 @@ botaoNovoProduto.addEventListener('click', (evento) => {
         url: url.value,
         nome: nome.value,
         preco: preco.value,
-        descricao: descricao.value.toLowerCase(),
-        categoria: categoria.value
+        descricao: descricao.value,
+        categoria: categoria.value.toLowerCase()
     }
 
     const produtosAtualizados = [...todosProdutos, produto]
@@ -32,6 +32,8 @@ botaoNovoProduto.addEventListener('click', (evento) => {
     preco.value = '';
     categoria.value = '';
     descricao.value = '';
+
+    window.location.href="todos-produtos.html";
 })
 
 

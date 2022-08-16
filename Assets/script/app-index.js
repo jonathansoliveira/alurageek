@@ -8,7 +8,7 @@ produtosAtualizados.forEach((produto)=>{
         const consoles = document.querySelector('[data-consoles]')
         consoles.appendChild(criaProdutoNosConsoles(produto))
     }
-    if(produto.categoria=="starwars"){
+    if(produto.categoria=="starwars"||produto.categoria=="star wars"){
         const starwars = document.querySelector('[data-starwars]')
         starwars.appendChild(criaProdutoNosConsoles(produto))
     }

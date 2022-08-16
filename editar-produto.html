@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Assets/css/reset.css">
+    <link rel="stylesheet" href="Assets/css/normalize.css">
+    <link rel="stylesheet" href="Assets/css/base.css">
+    <link rel="stylesheet" href="Assets/css/cabecalho.css">
+    <link rel="stylesheet" href="Assets/css/rodape.css">
+    <link rel="stylesheet" href="Assets/css/formcontato.css">
+    <link rel="stylesheet" href="Assets/css/form-addproduto.css">
+    <link rel="stylesheet" href="Assets/css/formulariosValidacao.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+
+    <title>AluraGeek E-commerce</title>
+</head>
+<body>
+    <header>
+        <section class="cabecalho container">
+            <div class="cabecalho__principal">
+                <a href="index.html"><img src="Assets/imagens/logo.png" class="logo" alt="Logo da AluraGeek"></a>
+                <div class="cabecalho__pesquisa">
+                    <input type="text" class="input__pesquisa" placeholder="O que deseja encontrar?">
+                    <input type="submit" class="btn-pesquisar" value="">
+                </div>       
+            </div>
+            <a href="login.html" class="button-administrador">Menu administrador</a>
+        </section>
+    </header>
+    <main>
+        <section class="section-addProduto container">
+            <form class="formaddproduto">
+                <h2 class="formaddproduto__titulo">Editar Produto</h2>
+                <div class="input-container">
+                    <input class="form-url" type="text" data-tipo="url" placeholder="URL da imagem" data-url required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-categoria" type="text" data-tipo="categoria" data-categoria placeholder="Digite uma categoria: Star Wars, Consoles ou Diversos" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-produto" type="text" data-tipo="nomeDoProduto" data-nomeProduto placeholder="Nome do produto" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-preco" type="text" data-tipo="preco" placeholder="Preço do produto" data-preco required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input class="form-descricao" type="text" data-tipo="descricao" placeholder="Descrição do produto" data-descricao required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <input type="submit" class="btn-addproduto" value="Editar" data-btnNovoProduto>
+            </form>
+         </section>                    
+         <section class="formcontato container">
+            <div class="contato__container">
+                <div class="formcontato__img">
+                     <img src="Assets/imagens/logo.png" alt="logo AluraGeek" class="logo logo__sobre">
+                </div>
+                <div class="formcontato__sobre">
+                    <ul class="sobre">
+                        <li><a href="#" class="sobre__li">Quem somos nós</a></li>
+                        <li><a href="#" class="sobre__li">Política de privacidade</a></li>
+                        <li><a href="#" class="sobre__li">Programa fidelidade</a></li>
+                        <li><a href="#" class="sobre__li">Nossas lojas</a></li>
+                        <li><a href="#" class="sobre__li">Quero ser franqueado</a></li>
+                        <li><a href="#" class="sobre__li">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formcontato__formulario">
+                <h3 class="formulario__titulo">Fale conosco</h3>
+                <form class="form">
+                    <div class="input-container">
+                        <input type="text" id="nome" name="name" class="form__nome" data-tipo="nome" placeholder="Nome" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="mensagem" id="mensagem" class="form__mensagem" id="mensagem" data-tipo="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <input type="submit" class="button__enviarMsg" >
+                </form>                
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__desenvolvedor">
+            <p>Desenvolvido por Jonathan Oliveira</p>
+            <p>2022</p>
+        </div>
+    </footer>   
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    <script src="Assets/script/validaFormularios.js"></script> 
+    <script src="Assets/script/app-editar.js" type="module"></script>
+</body>
+</html>

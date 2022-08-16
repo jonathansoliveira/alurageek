@@ -11,7 +11,6 @@ botoesDeleta.forEach((botao, id)=>{
 
         const elemento = event.target;        
         elemento.parentElement.parentElement.remove();
-
     })
 })
 }
