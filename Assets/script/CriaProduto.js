@@ -5,7 +5,7 @@ const produtos = [{
     descricao: "",
     categoria: "starwars"
 }, {
-    url: "Assets/imagens/Skill2.png",
+    url: "Assets/imagens/skill2.png",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
@@ -17,7 +17,7 @@ const produtos = [{
     descricao: "",
     categoria: "starwars"
 },{
-    url: "Assets/imagens/Skill4.png",
+    url: "Assets/imagens/skill4.png",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
@@ -29,7 +29,7 @@ const produtos = [{
     descricao: "",
     categoria: "starwars"
 },{
-    url: "Assets/imagens/Skill6.png",
+    url: "Assets/imagens/skill6.png",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
@@ -41,31 +41,31 @@ const produtos = [{
     descricao: "",
     categoria: "consoles"
 },{
-    url: "Assets/imagens/Skill8.png",
+    url: "Assets/imagens/skill8.png",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "consoles"
 },{
-    url: "Assets/imagens/Skill9.jpg",
+    url: "Assets/imagens/skill9.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "consoles"
 },{
-    url: "Assets/imagens/Skill10.jpg",
+    url: "Assets/imagens/skill10.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "consoles"
 },{
-    url: "Assets/imagens/Skill11.jpg",
+    url: "Assets/imagens/skill11.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "consoles"
 },{
-    url: "Assets/imagens/Skill12.png",
+    url: "Assets/imagens/skill12.png",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
@@ -77,31 +77,31 @@ const produtos = [{
     descricao: "",
     categoria: "diversos"
 },{
-    url: "Assets/imagens/Skill14.jpg",
+    url: "Assets/imagens/skill14.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "diversos"
 },{
-    url: "Assets/imagens/Skill15.jpg",
+    url: "Assets/imagens/skill15.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "diversos"
 },{
-    url: "Assets/imagens/Skill16.jpg",
+    url: "Assets/imagens/skill16.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "diversos"
 },{
-    url: "Assets/imagens/Skill17.jpg",
+    url: "Assets/imagens/skill17.jpg",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
     categoria: "diversos"
 },{
-    url: "Assets/imagens/Skill18.png",
+    url: "Assets/imagens/skill18.png",
     nome: "Produto XYZ",
     preco: "R$ 60,00",
     descricao: "",
